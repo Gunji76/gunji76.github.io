@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="ja">
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
@@ -14,13 +14,13 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
-  <body class="lang-ja">
+  <body class="lang-en">
 
     <!-- Language Toggle -->
     <div class="lang-switch">
-      <a id="btn-en" onclick="switchLang('en')">English</a>
+      <a id="btn-en" class="active" onclick="switchLang('en')">English</a>
       <span class="sep">|</span>
-      <a id="btn-ja" class="active" onclick="switchLang('ja')">日本語</a>
+      <a id="btn-ja" onclick="switchLang('ja')">日本語</a>
     </div>
 
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -82,11 +82,7 @@
                   <span class="en">
                     My near-term research focus is on applying NeRF and 3DGS to
                     e-commerce, enabling customers to experience photorealistic material appearance
-                    and texture of products—such as golf clubs—without physical samples. This builds
-                    directly on my background in active 3D sensing and industrial measurement,
-                    including robust reconstruction of challenging surfaces such as specular and
-                    transparent objects, and integration of active lighting and sensing to improve
-                    reconstruction quality.
+                    and texture of products without physical samples.
                   </span>
                   <span class="ja">
                     直近ではNeRFや3DGS等の3D表現技術によって、
@@ -97,14 +93,14 @@
                 <p>
                   <span class="en">
                     Through years of work with <strong>active 3D sensing</strong>—including
-                    laser interferometry, millimeter-wave radar, light-section profilometry, and structured
+                    laser interferometry, millimeter-wave radar, laser line scanning, and structured
                     light—I repeatedly encountered the limitations of noise on specular surfaces and the
                     inability to reproduce material appearance. Discovering
-                    <strong>3D Gaussian Splatting (3DGS)</strong> was a turning point: reconstructing a
-                    golf club head revealed a level of photorealism and real-time rendering speed I had
-                    never seen before. My goal is to bridge hardware expertise in optics, lasers, cameras,
-                    and actuators with software knowledge in image processing and 3D analysis, advancing
-                    3D reconstruction toward more practical and compelling real-world applications.
+                    <strong>3D Gaussian Splatting (3DGS)</strong> was a turning point—its extraordinary
+                    material rendering quality and real-time speed sparked my interest in deep learning.
+                    I want to combine hardware expertise in sensing and actuators with software knowledge
+                    in 2D/3D processing, and expand deep learning-based 3D representations across a wide
+                    range of real-world applications.
                   </span>
                   <span class="ja">
                     レーザー干渉計・ミリ波レーダー・光切断法・構造化照明といったアクティブ3Dセンシングに
@@ -117,13 +113,12 @@
                 <p>
                   <span class="en">
                     Looking further ahead, I am drawn to a deeper question: can we quantify human
-                    sensory perception itself? The "feel" of a golf club impact, for instance, has
+                    sensory perception itself? For instance, the "feel" of a golf club impact has
                     long resisted precise definition—prior Kansei engineering studies using small-scale
                     neural networks identified correlations between design parameters and subjective
                     evaluation, but multimodal sensing and modern deep learning remain largely
-                    unexplored in this domain. I see a compelling research direction at the
-                    intersection of Kansei engineering and AI, where vibration, acoustics, and haptic
-                    data are fused to model and ultimately design for human perception.
+                    unexplored in this domain.
+                    A perfectly struck iron—that solid, resonant feel at impact—is something every golfer chases. If we could model that sensation, the applications would go well beyond golf. I hope to make the world a little more interesting through this kind of research.
                   </span>
                   <span class="ja">
                     将来的には、マルチモーダルセンシングと深層学習を用いて人の感性のモデル化に取り組みたいと考えています。
@@ -134,6 +129,27 @@
                     そのような研究から、少しでも世界を面白くできたら良いなと思います。
                   </span>
                 </p>
+                <br>
+                <!-- 3DGS embed -->
+                <p style="margin-bottom:4px; font-size:0.92em; color:#555; text-align:center;">
+                  <span class="en">
+                    3DGS generated using <a href="https://github.com/ArthurBrussee/brush" target="_blank"><strong>Brush</strong></a> (by Arthur Brussee, Apache 2.0)
+                  </span>
+                  <span class="ja">
+                    3DGS generated using <a href="https://github.com/ArthurBrussee/brush" target="_blank"><strong>Brush</strong></a> (by Arthur Brussee, Apache 2.0)
+                  </span>
+                </p>
+                <div style="margin: 8px auto 16px; border-radius: 8px; overflow: hidden; aspect-ratio: 16/7; width: 80%;">
+                  <iframe
+                    src="https://superspl.at/s?id=ef7e0e86"
+                    width="100%"
+                    height="100%"
+                    style="border:none; display:block;"
+                    allowfullscreen
+                    loading="lazy"
+                    title="3D Gaussian Splatting Demo — reconstructed with Brush">
+                  </iframe>
+                </div>
               </td>
             </tr>
           </tbody></table>
@@ -164,7 +180,7 @@
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <span class="papertitle">
-                  <span class="en">3D Golf Club Measurement System "Spector" — Iron &amp; Wood</span>
+                  <span class="en">Development of Non-Contact 3D Golf Club Measurement System "Spector" — Iron &amp; Wood</span>
                   <span class="ja">非接触ゴルフクラブ寸法検査装置の開発</span>
                 </span>
                 <br>
@@ -407,11 +423,11 @@
                   <span class="ja">修士（工学）/ 電気電子システム工学</span>
                 </strong>
                 <br>
-                <span class="en">Saitama University, Graduate School of Science and Engineering, Course of Electrical and Electronic Systems Engineering</span>
+                <span class="en">Saitama University, Graduate School of Science and Engineering</span>
                 <span class="ja">埼玉大学大学院 理工学研究科 電気電子システム工学コース</span>
                 <br>
                 <span class="edu-thesis">
-                  <span class="en">Thesis: &ldquo;Tomographic Spectroscopy Based on Low-Coherence Interferometry&rdquo;</span>
+                  <span class="en">Thesis: Tomographic Spectroscopy Based on Low-Coherence Interferometry</span>
                   <span class="ja">修士論文:「低コヒーレンス干渉計によるトモグラフィック分光法の研究」</span>
                 </span>
               </td>
@@ -458,7 +474,7 @@
                 </strong>
               </td>
               <td style="padding:8px;width:80%;vertical-align:top">
-                <span class="en">TOEIC L&amp;R: 825 (Feb 15, 2026)</span>
+                <span class="en">TOEIC L&amp;R: 825 (Feb 2026)</span>
                 <span class="ja">TOEIC L&amp;R: 825点（2026/2/15）</span>
               </td>
             </tr>
